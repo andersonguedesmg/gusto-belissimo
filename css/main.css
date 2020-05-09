@@ -213,7 +213,7 @@ body {
 }
 
 /* Location */
-.card-address{
+.card-address {
   background-color: var(--light-black);
 }
 
@@ -250,12 +250,74 @@ body {
 }
 
 /* Footer */
-footer .copyright {
-  font-size: 1rem;
-  color: var(--white);
-}
-
 footer {
   height: 10vh;
   background: var(--black);
+}
+
+footer .copyright {
+  font-size: 1rem;
+  color: var(--white);
+  padding-top: 1rem;
+}
+
+
+.cardBox {
+  perspective: 500px;
+  margin: 15px;
+}
+
+.cardBoxItem {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #FFF;
+  transform-style: preserve-3d;
+  transition: 1s;
+  box-shadow: 0px 30px 30px rgb(0, 0, 0, 0.5);
+  border-top-left-radius: 20%;
+  border-top-right-radius: none;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: 20%;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.instagram {
+  background: #db4437;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  color: #FFF;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center
+}
+
+.card-back {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center
+}
+
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }
