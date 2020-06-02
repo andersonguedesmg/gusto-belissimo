@@ -10,6 +10,7 @@
   --red: #c60600;
   --dark-red: #9b0000;
   --light-red: #ff5131;
+  --gold: #ffd700;
   --red-low-opacity: rgba(2013, 0, 0, 0.5);
 }
 
@@ -107,7 +108,7 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--black) !important;
+  color: var(--gold) !important;
 }
 
 .sticky.is-sticky {
@@ -121,7 +122,7 @@ body {
 
 /* Header */
 .header {
-  background-image: url(../assets/images/image-header.jpg);
+  background-image: url(../assets/images/image-header.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -158,6 +159,7 @@ body {
   top: 0;
   bottom: 0;
   z-index: 1;
+  cursor: pointer;
 }
 
 .menu-item .caption .caption-content {
