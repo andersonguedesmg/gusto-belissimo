@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 :root {
   --white: #ffffff;
@@ -134,11 +135,10 @@ body {
 .logo-header {
   display: block;
   font-size: 9rem;
-  line-height: 1.133;
   color: #ffffff;
-  font-family: "montserrat-bold", serif;
-  letter-spacing: 5px;
-  padding-top: 3rem;
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 2.5px;
+  padding-top: 3.5rem;
 }
 
 /* Menu */
