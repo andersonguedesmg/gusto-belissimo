@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 :root {
   --white: #ffffff;
@@ -82,6 +82,7 @@ body {
   padding-left: 1.5%;
   color: var(--white);
   font-family: "montserrat-bold", serif;
+  font-size: 0.8rem;
 }
 
 .navbar-brand {
@@ -136,20 +137,12 @@ body {
   display: block;
   font-size: 9rem;
   color: #ffffff;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   letter-spacing: 2.5px;
-  padding-top: 3.5rem;
+  padding-top: 5.5rem;
 }
 
 /* Menu */
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-}
-
 .menu-item .caption {
   display: flex;
   height: 100%;
@@ -225,11 +218,6 @@ body {
   font-family: "montserrat-bold", serif;
   letter-spacing: 2px;
   font-size: 1.2rem;
-}
-
-.location-item {
-  color: var(--white);
-  font-family: "montserrat-bold", serif;
   padding-top: 1rem;
 }
 
@@ -260,9 +248,8 @@ footer {
 footer .copyright {
   font-size: 1rem;
   color: var(--white);
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
-
 
 .cardBox {
   perspective: 500px;
@@ -273,7 +260,7 @@ footer .copyright {
   position: relative;
   width: 50px;
   height: 50px;
-  background: #FFF;
+  background: #fff;
   transform-style: preserve-3d;
   transition: 1s;
   box-shadow: 0px 30px 30px rgb(0, 0, 0, 0.5);
@@ -298,7 +285,7 @@ footer .copyright {
   left: 0;
   width: 50px;
   height: 50px;
-  color: #FFF;
+  color: #fff;
   backface-visibility: hidden;
 }
 
@@ -306,14 +293,14 @@ footer .copyright {
   display: flex;
   font-size: 20px;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .card-back {
   display: flex;
   font-size: 20px;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .cardBox:hover .card {
@@ -322,4 +309,195 @@ footer .copyright {
 
 .card-back {
   transform: rotateY(180deg);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 595px) {
+}
+
+@media only screen and (min-width: 596px) and (max-width: 690px) {
+}
+
+@media only screen and (min-width: 691px) and (max-width: 800px) {
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  .navbar-higher p {
+    padding-top: 1.2%;
+    font-size: 0.8rem;
+  }
+
+  .navbar-primary {
+    min-height: 5rem;
+  }
+
+  .navbar-primary .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-primary .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .logo-header {
+    font-size: 7rem;
+    padding-top: 8.5rem;
+  }
+
+  .content-section .section-title-odd {
+    font-size: 1.5rem;
+  }
+
+  .content-section .section-title-even {
+    font-size: 1.5rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1rem;
+  }
+
+  .menu-item .caption .caption-content p {
+    font-size: 0.9rem;
+  }
+
+  .location-item {
+    font-size: 1rem;
+  }
+
+  .location-text {
+    font-size: 0.8rem;
+  }
+
+  .location-text--down {
+    font-size: 0.8rem;
+  }
+
+  .location-text--last {
+    font-size: 0.8rem;
+  }
+
+  footer .copyright {
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1600px) {
+  .navbar-higher p {
+    padding-top: 1%;
+    font-size: 1rem;
+  }
+
+  .navbar-primary {
+    min-height: 5rem;
+  }
+
+  .navbar-primary .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-primary .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .logo-header {
+    font-size: 10rem;
+    padding-top: 11.5rem;
+  }
+
+  .content-section .section-title-odd {
+    font-size: 2rem;
+  }
+
+  .content-section .section-title-even {
+    font-size: 2rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1.3rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1.3rem;
+  }
+
+  footer .copyright {
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1825px) and (max-width: 1920px) {
+  .navbar-higher p {
+    padding-top: 1%;
+    font-size: 1.1rem;
+  }
+
+  .navbar-primary {
+    min-height: 6rem;
+  }
+
+  .navbar-primary .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .navbar-primary .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .logo-header {
+    font-size: 12rem;
+    padding-top: 15.5rem;
+  }
+
+  .content-section .section-title-odd {
+    font-size: 2.3rem;
+  }
+
+  .content-section .section-title-even {
+    font-size: 2.3rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1.7rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1.7rem;
+  }
+
+  .location-item {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .location-text {
+    font-size: 1.3rem;
+  }
+
+  .location-text--down {
+    font-size: 1.3rem;
+  }
+
+  .location-text--last {
+    font-size: 1.3rem;
+  }
+
+  footer .copyright {
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+  }
 }
