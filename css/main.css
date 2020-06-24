@@ -142,6 +142,11 @@ body {
   padding-top: 5.5rem;
 }
 
+.socialNetworksRow {
+  display: flex;
+  justify-content: center;
+}
+
 /* Menu */
 .menu-item .caption {
   display: flex;
