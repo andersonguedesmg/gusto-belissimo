@@ -142,9 +142,70 @@ body {
   padding-top: 5.5rem;
 }
 
+/* Social Networks */
 .socialNetworksRow {
   display: flex;
   justify-content: center;
+}
+
+.cardBox {
+  perspective: 500px;
+  margin: 15px;
+}
+
+.cardBoxItem {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transition: 1s;
+  box-shadow: 0px 30px 30px rgb(0, 0, 0, 0.5);
+  border-top-left-radius: 20%;
+  border-top-right-radius: none;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: 20%;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.instagram {
+  background: #db4437;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }
 
 /* Menu */
@@ -173,6 +234,29 @@ body {
 .menu-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
+}
+
+.btn-modal {
+  color: var(--white);
+  background: var(--black);
+}
+
+.btn-modal:hover {
+  color: var(--gold);
+  background: var(--black);
+  border-color: var(--black);
+}
+
+.btn-modal:focus {
+  color: var(--gold);
+  background: var(--black);
+  border-color: var(--black);
+}
+
+.btn-modal:active {
+  color: var(--gold);
+  background: var(--black) !important;
+  border-color: var(--black) !important;
 }
 
 @media (min-width: 992px) {
@@ -256,82 +340,290 @@ footer .copyright {
   padding-top: 1.5rem;
 }
 
-.cardBox {
-  perspective: 500px;
-  margin: 15px;
-}
-
-.cardBoxItem {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  transform-style: preserve-3d;
-  transition: 1s;
-  box-shadow: 0px 30px 30px rgb(0, 0, 0, 0.5);
-  border-top-left-radius: 20%;
-  border-top-right-radius: none;
-  border-bottom-left-radius: none;
-  border-bottom-right-radius: 20%;
-}
-
-.facebook {
-  background: #3b5998;
-}
-
-.instagram {
-  background: #db4437;
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  backface-visibility: hidden;
-}
-
-.card-front {
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-back {
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.cardBox:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card-back {
-  transform: rotateY(180deg);
-}
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-higher {
+    height: 4vh;
+  }
+
+  .navbar-higher p {
+    padding-top: 1.5%;
+    font-size: 0.8rem;
+  }
+
+  .navbar-primary {
+    min-height: 4rem;
+  }
+
+  .navbar-primary .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .navbar-primary .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .content-section .section-title-odd {
+    font-size: 1.3rem;
+  }
+
+  .content-section .section-title-even {
+    font-size: 1.3rem;
+  }
+
+  .content-section .section-text {
+    font-size: 0.9rem;
+  }
+
+  .content-section .section-text {
+    font-size: 0.9rem;
+  }
+
+  .logo-header {
+    font-size: 2.8rem;
+    padding-top: 13.5rem;
+  }
+
+  .menu-item .caption .caption-content p {
+    font-size: 0.85rem;
+  }
+
+  .location-item {
+    font-size: 0.8rem;
+  }
+
+  .location-text {
+    font-size: 0.7rem;
+  }
+
+  .location-text--down {
+    font-size: 0.7rem;
+  }
+
+  .location-text--last {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    height: 6vh;
+  }
+
+  footer .copyright {
+    font-size: 0.7rem;
+    padding-top: 1rem;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 595px) {
+  .navbar-higher {
+    height: 4vh;
+  }
+
+  .navbar-higher p {
+    padding-top: 1.5%;
+    font-size: 0.8rem;
+  }
+
+  .navbar-primary {
+    min-height: 4rem;
+  }
+
+  .navbar-primary .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .navbar-primary .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .content-section .section-title-odd {
+    font-size: 1.3rem;
+  }
+
+  .content-section .section-title-even {
+    font-size: 1.3rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1rem;
+  }
+
+  .logo-header {
+    font-size: 3.3rem;
+    padding-top: 13.5rem;
+  }
+
+  .menu-item .caption .caption-content p {
+    font-size: 1rem;
+  }
+
+  .location-item {
+    font-size: 0.9rem;
+  }
+
+  .location-text {
+    font-size: 0.8rem;
+  }
+
+  .location-text--down {
+    font-size: 0.8rem;
+  }
+
+  .location-text--last {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    height: 6vh;
+  }
+
+  footer .copyright {
+    font-size: 0.8rem;
+    padding-top: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 596px) and (max-width: 690px) {
+  .navbar-higher {
+    height: 4vh;
+  }
+
+  .navbar-higher p {
+    padding-top: 1.5%;
+    font-size: 0.8rem;
+  }
+
+  .navbar-primary {
+    min-height: 4rem;
+  }
+
+  .navbar-primary .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .navbar-primary .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .content-section .section-title-odd {
+    font-size: 1.3rem;
+  }
+
+  .content-section .section-title-even {
+    font-size: 1.3rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1rem;
+  }
+
+  .content-section .section-text {
+    font-size: 1rem;
+  }
+
+  .logo-header {
+    font-size: 4.8rem;
+    padding-top: 13.5rem;
+  }
+
+  .menu-item .caption .caption-content p {
+    font-size: 0.85rem;
+  }
+
+  .location-item {
+    font-size: 0.9rem;
+  }
+
+  .location-text {
+    font-size: 0.8rem;
+  }
+
+  .location-text--down {
+    font-size: 0.8rem;
+  }
+
+  .location-text--last {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    height: 6vh;
+  }
+
+  footer .copyright {
+    font-size: 0.8rem;
+    padding-top: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 691px) and (max-width: 800px) {
+  .navbar-higher {
+    height: 4vh;
+  }
+
+  .navbar-higher p {
+    padding-top: 1.5%;
+    font-size: 0.8rem;
+  }
+
+  .navbar-primary {
+    min-height: 5rem;
+  }
+
+  .navbar-primary .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .navbar-primary .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .logo-header {
+    font-size: 6rem;
+    padding-top: 13.5rem;
+  }
+
+  .location-item {
+    font-size: 1rem;
+  }
+
+  .location-text {
+    font-size: 0.8rem;
+  }
+
+  .location-text--down {
+    font-size: 0.8rem;
+  }
+
+  .location-text--last {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    height: 6vh;
+  }
+
+  footer .copyright {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+  }
 }
 
-@media only screen and (min-width: 801px) and (max-width: 1024px) {
-}
+@media only screen and (min-width: 801px) and (max-width: 1024px) and (orientation: portrait) {
+  .navbar-higher {
+    height: 3vh;
+  }
 
-@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  .logo-header {
+    padding-top: 28.5rem !important;
+  }
+
+  footer {
+    height: 5vh;
+  }
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
